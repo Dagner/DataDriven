@@ -16,7 +16,7 @@ public class ReadTextFile : MonoBehaviour
     
     void Start()
     {
-        //TextMeshProUGUI txtM = txtMesh.GetComponent<TextMeshProUGUI>();
+        TextMeshProUGUI txtM = txtMesh.GetComponent<TextMeshProUGUI>();
        
         
         assetsPath = Application.streamingAssetsPath;
@@ -29,7 +29,7 @@ public class ReadTextFile : MonoBehaviour
 
         print(rawText);
         parseText(rawText);
-        //txtM.text = rawText;
+        txtM.text = rawText;
         
     }
 
